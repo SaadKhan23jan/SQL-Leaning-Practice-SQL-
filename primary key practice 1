@@ -1,0 +1,7 @@
+create table if not exists countries2(country_id integer primary key unique,
+country_name text,
+region_id integer);
+
+insert into countries2 values(1, 'Pakistan', 102);
+insert into countries2 values(2, 'Germany', 4);
+insert into countries2 values (1, 'USA', 10)

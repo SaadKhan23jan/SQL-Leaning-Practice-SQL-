@@ -1,0 +1,8 @@
+create table if not exists countries1
+	(country_id varchar(2),
+    country_name varchar(40),
+    check(country_name in('Italy', 'Pakistan', 'Germany')),
+    region_id decimal(10,0));
+
+insert into countries1 values('PK', 'Pakistan', 92);
+insert into countries1 values('US', 'United States', 89);

@@ -1,0 +1,8 @@
+create table if not exists job_history(employee_id integer,
+start_date text,
+end_date text check(end_date like '__/__/____'),
+job_id integer,
+department_id integer);
+
+insert into job_history values(12, '12/02/2020', '17/04/2020', 105, 21);
+insert into job_history values(12, '12-02-2020', '17-04-2020', 105, 21);

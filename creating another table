@@ -1,0 +1,6 @@
+create table if not exists countries(COUNTRY_ID varchar(2) NOT NULL,
+COUNTRY_NAME varchar(40) NOT NULL,
+REGION_ID decimal(10,0) NOT NULL
+);
+
+create table if not exists jobs(job_id integer, job_title text, min_salary integer, max_salary integer check(max_salary<=25000));

@@ -1,0 +1,10 @@
+create table if not exists job_new(job_id integer unique,
+job_title text,
+min_salary integer default 8000,
+max_salary integer);
+
+insert into job_new values(1, 'Engineer', 30000, 100000);
+insert into job_new values(1, 'empty', 500000, 10000000);
+
+
+

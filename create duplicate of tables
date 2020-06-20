@@ -1,0 +1,7 @@
+create table if not exists countries(COUNTRY_ID varchar(2),
+COUNTRY_NAME varchar(40),
+REGION_ID decimal(10,0)
+);
+
+create table if not exists dup_countries
+select * from countries;
